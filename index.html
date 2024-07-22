@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- Favicon link -->
+    <link rel="shortcut icon" href="portfolio.png">
+    <!-- Title link -->
+    <title>Personal Portfolio</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/b9276cef4c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- -------------------------------------Header------------------------------------------------------ -->
+<div id="header">
+    <div class="container">
+        <nav class="head">
+            <!-- User icon -->
+            <i class="fa-solid fa-user"></i>
+            <!-- Navigation Menu -->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <!-- Close menu button -->
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <!-- Open menu button -->
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <!-- Header text -->
+        <div class="header-text">
+                <p>Hey there!</p>
+                <h1>I'm <span>Bhanu Repalle</span></h1>
+                <br>
+                <!-- CV download button -->
+                <a href="Resume.pdf" download="Resume.pdf" class="download-button">Download CV</a>
+        </div>
+    </div>
+</div> 
+
+<!-- ------------------------------------About------------------------------------------------------- -->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <!-- About Section Image -->
+            <div class="about-col-1">
+                <img src="my_photo.jpg" alt="My photo">
+            </div>
+            <!-- About Section Content -->
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p class="text">Hello! I am Bhanu Repalle, a third-year Computer Science and Engineering student at IIT Gandhinagar.
+                    I am passionate about machine learning and constantly exploring new technologies. In addition to my technical interests, I am an avid athlete and a dedicated sprinter.
+                    </p>
+                <!-- Tab Titles -->
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <!-- Skills tab content -->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>C++</span></li>
+                        <li><span>Python</span></li>
+                        <li><span>Verliog</span></li>
+                        <li><span>Web development (HTML, CSS, JavaScript)</span></li>
+                    </ul>
+                </div>
+                <!-- Experience tab content -->
+                <div class="tab-contents" id="achievements">
+                    <ul>
+                        <li><span>Dean's List</span><br>Dean’s List Academic year 2022-2023, IIT Gandhinagar</li>
+                        <li><span>Athletics</span><br>Gold in 400m relay, silver in 100m relay, and bronze in 200m at Varchas event, IIT Jodhpur 2023.</li>
+                    </ul>
+                </div>
+                <!-- Education tab content -->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-Present</span><br>IIT Gandhinagar</li>
+                        <li><span>2020-2022</span><br>Bhashyam Junior College</li>
+                        <li><span>2015-2020</span><br>Bhashyam Blooms</li>
+                    </ul>
+                </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------------------------------Project---------------------------------------------- -->
+<div id="Project">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <!-- Project 1 -->
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>NILM Energy Disaggregation</h2>
+                <p>Disaggregated mains power by converting benchmark algorithms from Keras to PyTorch and integrating attention mechanisms.
+                    Studied and applied transformers, Large Language Models (LLMs), and prompt engineering techniques to fine-tune models for optimal performance.</p>
+                <a href="https://github.com/Bhanu3487/NILM-using-LLM.git" target="_blank">Learn more</a>    
+            </div>
+            <!-- Project 2 -->
+            <div>
+                <i class="fa-regular fa-address-card"></i>
+                <h2>Personal Portfolio</h2>
+                <p>Built a responsive portfolio website using HTML, CSS, and JavaScript, 
+                    featuring a modern design to display my projects, skills, and achievements. 
+                    The site includes interactive elements for better user experience and a showcase of my web development skills.</p>
+                <a href="https://github.com/Bhanu3487/Personal-Portfolio" target="_blank">Learn more</a>
+            </div>
+            <!-- Project 3 -->
+            <div>
+                <i class="fa-solid fa-microchip"></i>
+                <h2>CNNs on FPGA using SIMBA-like Architecture</h2>
+                <p> Designed and implemented a convolutional neural network (CNN) on FPGA using a SIMBA-like architecture for
+                    MNIST digit recognition. Acquired hands-on experience with FPGA programming, hardware acceleration for neural networks and the SIMBA architecture’s hierarchical structure.</p>
+                <a href="https://github.com/Bhanu3487/CNNs-on-FPGA-using-SIMBA-like-architecture-.git" target="_blank">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------------------------------------Contact-------------------------------------------------------- -->
+<div id="Contact">
+    <div class="container">
+            <div class="contact-list">
+                <h1 class="sub-title">Contact me</h1>
+                <p>You can reach out to me through the following platforms:</p>
+                <!-- Contact email -->
+                <p><i class="fas fa-paper-plane"></i>bhanu.repalle@iitgn.ac.in</p>
+                <!-- Contact phone number
+                <p><i class="fas fa-phone-square alt"></i>+91 1237456985</p> -->
+                <!-- Social media icons -->
+                <div class="social-icons">
+                    <!-- <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>-->
+                    <a href=https://github.com/Bhanu3487 target="_blank"><i class="fa-brands fa-github"></i></a> 
+                    <a href="https://www.instagram.com/bhanuroshini/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://www.linkedin.com/in/bhanurepalle" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+    </div>
+</div>
+
+<!-- ---------------------------------------Java Script--------------------------------------------------- -->
+<!-- JavaScript for tab functionality -->
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<!-- JavaScript for menu functionality -->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";    
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";    
+    }
+</script>
+</body>
+</html>
